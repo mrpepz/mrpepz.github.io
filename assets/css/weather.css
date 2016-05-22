@@ -148,6 +148,7 @@ body {
 
 #rain-canvas, #weather-canvas, #cloud-canvas, #time-canvas, #lightning-canvas {
     position:absolute;
+    min-height:400px;
 }
 
 
