@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="weather.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -60,32 +61,58 @@
 					</header>
 
 					<!-- One -->
-						<section class="wrapper style2 container special-alt">
-							<div class="row 50%">
-								<div class="8u 12u(narrower)">
+						<section  id="weather-background" class="wrapper style2 container special-alt default-weather">
+						
+        <canvas id="rain-canvas">
 
-								
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
-										</ul>
-									</footer>
+        </canvas>
 
-								</div>
-								<div class="4u 12u(narrower) important(narrower)">
+        <canvas id="cloud-canvas">
 
-									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-									</ul>
+        </canvas>
 
-								</div>
-							</div>
+        <canvas id="weather-canvas">
+
+        </canvas>
+
+        <canvas id="time-canvas">
+
+        </canvas>
+        <canvas id="lightning-canvas">
+
+        </canvas>
+    <div class="page-wrap">
+
+
+
+
+        <div id="geo-error-message" class="geo-error-message hide"><button id='close-error' class='fa fa-times close-error'></button>Uh oh! It looks like we can't find your location. Please type your city into the search box above!</div>
+
+        <div id="front-page-description" class="front-page-description middle">
+            <h1>Blank Canvas Weather</h1>
+            <h2>An Obligatory Weather App</h2>
+        </div>
+
+        <div id="weather" class="weather middle hide">
+            <div class="location" id="location"></div>
+            <div class="weather-container">
+                <div id="temperature-info" class="temperature-info">
+                    <div class="temperature" id="temperature"></div>
+                    <div class="weather-description" id="weather-description"></div>
+                </div>
+                <div class="weather-box">
+                    <ul class="weather-info" id="weather-info">
+                        <li class="weather-item humidity">Humidity: <span id="humidity"></span>%</li><!--
+                     --><li class="weather-item wind">Wind: <span id="wind-direction"></span> <span id="wind"></span> <span id="speed-unit"></span></li>
+                    </ul>
+                </div>
+                <div class="temp-change">
+                    <button id="celsius" class="temp-change-button celsius">&deg;C</button><button id="fahrenheit" class="temp-change-button fahrenheit">&deg;F</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+
 						</section>
 
 					<!-- Two -->
@@ -238,6 +265,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/d3test.js"></script>
+			<script src="weather.js"></script>
 
 	</body>
 </html>
