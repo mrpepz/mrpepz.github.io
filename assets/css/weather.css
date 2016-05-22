@@ -29,45 +29,6 @@
     background-color: #fff;
 }
 
-.search-bar {
-    background:#fff;
-    height:129px;
-    color:#555;
-    padding-top:5px;
-}
-
-.search-location-text {
-    font-size: 16px;
-    font-weight:300;
-}
-.search-text {
-    text-align:center;
-    margin-bottom:10px;
-}
-
-
-.search-button {
-    border:none;
-    width:50%;
-    background-color: #ddd;
-    color:#555;
-    height:50px;
-    font-size:16px;
-    display:inline-block;
-}
-
-.search-location-button {
-    border-right: 1px solid #fff;
-}
-
-.geo-button {
-    border-left: 1px solid #fff;
-}
-
-.search-location-input {
-    color: #000;
-    padding:7px;
-}
 
 body {
     margin:0;
@@ -83,7 +44,7 @@ body {
 
 #rain-canvas, #weather-canvas, #cloud-canvas, #time-canvas, #lightning-canvas {
     position:absolute;
-    height:400px;
+
 }
 
 
