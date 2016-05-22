@@ -91,9 +91,7 @@ WeatherInfo = {
     },
 
     init: function() {
-		$( document ).ready(function() {
-			WeatherInfo.getWeatherData();
-		});
+	
 		
 		
 		
@@ -796,4 +794,5 @@ $(function() {
     GLoc.init();
     WeatherInfo.init();
     CanvasBackground.init();
+    	WeatherInfo.getWeatherData();
 });
