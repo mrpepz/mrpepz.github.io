@@ -3122,6 +3122,7 @@
 			#banner {
 				background-size: 10em, 10em, auto, cover;
 				padding: 6em 0;
+				min-height:1000px;
 			}
 
 				#banner .inner {
