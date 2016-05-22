@@ -2394,6 +2394,7 @@
 	}
 
 	#banner {
+		min-height:1000px
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
@@ -3122,7 +3123,7 @@
 			#banner {
 				background-size: 10em, 10em, auto, cover;
 				padding: 6em 0;
-				min-height:1000px;
+				min-height:600px;
 			}
 
 				#banner .inner {
