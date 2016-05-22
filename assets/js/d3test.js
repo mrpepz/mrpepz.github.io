@@ -41,7 +41,7 @@ timer.timer(function(elapsed) {
   context.beginPath();
   cells.forEach(drawCell);
   context.globalAlpha = 1;
-  context.strokeStyle = "#fff";
+  context.strokeStyle = "#008080";
   context.lineWidth = 1;
   context.stroke();
 });
