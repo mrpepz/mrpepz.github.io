@@ -285,16 +285,16 @@ CanvasBackground = {
         /* Resize the canvas to occupy the full page, 
            by getting the widow width and height and setting it to canvas*/
          
-        c.weatherCanvas.width  = $('.page-wrap').width;
-        c.weatherCanvas.height = $('.page-wrap').height;
-        c.rainCanvas.width  = $('.page-wrap').width;
-        c.rainCanvas.height = $('.page-wrap').height;
-        c.cloudCanvas.width  = $('.page-wrap').width;
-        c.cloudCanvas.height = $('.page-wrap').height;
-        c.timeCanvas.width  = $('.page-wrap').width;
-        c.timeCanvas.height = $('.page-wrap').height;
-        c.lightningCanvas.width = $('.page-wrap').width;
-        c.lightningCanvas.height = $('.page-wrap').height;
+        c.weatherCanvas.width  = $('.page-wrap').width();
+        c.weatherCanvas.height = $('.page-wrap').height();
+        c.rainCanvas.width  = $('.page-wrap').width();
+        c.rainCanvas.height = $('.page-wrap').height();
+        c.cloudCanvas.width  = $('.page-wrap').width();
+        c.cloudCanvas.height = $('.page-wrap').height();
+        c.timeCanvas.width  = $('.page-wrap').width();
+        c.timeCanvas.height = $('.page-wrap').height();
+        c.lightningCanvas.width = $('.page-wrap').width();
+        c.lightningCanvas.height = $('.page-wrap').height();
     },
 
     chooseBackground: function(condition) {
