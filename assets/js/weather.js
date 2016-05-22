@@ -285,16 +285,16 @@ CanvasBackground = {
         /* Resize the canvas to occupy the full page, 
            by getting the widow width and height and setting it to canvas*/
          
-        c.weatherCanvas.width  = window.innerWidth;
-        c.weatherCanvas.height = window.innerHeight;
-        c.rainCanvas.width  = window.innerWidth;
-        c.rainCanvas.height = window.innerHeight;
-        c.cloudCanvas.width  = window.innerWidth;
-        c.cloudCanvas.height = window.innerHeight;
-        c.timeCanvas.width  = window.innerWidth;
-        c.timeCanvas.height = window.innerHeight;
-        c.lightningCanvas.width = window.innerWidth;
-        c.lightningCanvas.height = window.innerHeight;
+        c.weatherCanvas.width  = 600;
+        c.weatherCanvas.height = 600;
+        c.rainCanvas.width  = 600;
+        c.rainCanvas.height = 600;
+        c.cloudCanvas.width  = 600;
+        c.cloudCanvas.height = 600;
+        c.timeCanvas.width  = 600;
+        c.timeCanvas.height = 600;
+        c.lightningCanvas.width = 600;
+        c.lightningCanvas.height = 600;
     },
 
     chooseBackground: function(condition) {
