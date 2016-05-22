@@ -147,7 +147,7 @@ body {
 }
 
 #rain-canvas, #weather-canvas, #cloud-canvas, #time-canvas, #lightning-canvas {
-    position:relative;
+    position:absolute;
 }
 
 
